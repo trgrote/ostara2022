@@ -6,6 +6,11 @@ public class PlayerWaterHandler : MonoBehaviour
 {
     [SerializeField] PlayerState _state;
 
+    void OnEnable()
+    {
+        _state._isSlowed = false;
+    }
+
     // Start is called before the first frame update
     void OnWaterEnter()
     {
