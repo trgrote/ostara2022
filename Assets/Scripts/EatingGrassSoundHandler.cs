@@ -9,16 +9,13 @@ public class EatingGrassSoundHandler : MonoBehaviour
 
     [SerializeField] AnimationCurve _volumeFalloff;
 
-    // Start is called before the first frame update
     void Awake()
     {
         _audio = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     public void StartGrassEatingSound()
     {
-        Debug.Log("StartGrassEatingSound");
         if (!_audio.isPlaying || _audio.volume <= 0)
         {
             _audio.Play();
