@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 1839784643059525338}
   - component: {fileID: 6713684054773751395}
   - component: {fileID: 1944771587528076295}
-  - component: {fileID: 8694828260205754380}
   - component: {fileID: 4297174004315861402}
   m_Layer: 0
   m_Name: 3DModel
@@ -146,19 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runtimeSet: {fileID: 11400000, guid: 7d6f5a4538a4d884b8e70a0e85b4a766, type: 2}
---- !u!114 &8694828260205754380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7192536552889804853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a2e446025471f489dd8f5f344ed214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _prefabToSpawn: {fileID: 5072629627912868102, guid: 8cb4ed1630a30e24eb541d4521b3cc3b, type: 3}
 --- !u!114 &4297174004315861402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,18 +160,6 @@ MonoBehaviour:
   _callbacks:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8694828260205754380}
-        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: b5348db0156084f48908a0304bb7192d, type: 2}
         m_TargetAssemblyTypeName: rho.Event, Rho
         m_MethodName: Raise0Args

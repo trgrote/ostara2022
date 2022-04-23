@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5072629627912868097}
   - component: {fileID: 5072629627912868096}
   - component: {fileID: 5072629627912868103}
-  - component: {fileID: -8194349095742066995}
+  - component: {fileID: 3712279292706991342}
   m_Layer: 0
   m_Name: GrassCutParticleEmitter
   m_TagString: Untagged
@@ -51,7 +51,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4871,7 +4871,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &-8194349095742066995
+--- !u!114 &3712279292706991342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4880,7 +4880,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5072629627912868102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1907955719f30384ba9c050a8bd1cdbe, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a5a2a465af8023499ee45e047c4765c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delay: 2
+  Event: {fileID: 11400000, guid: b5348db0156084f48908a0304bb7192d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5072629627912868096}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
