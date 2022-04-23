@@ -6,4 +6,5 @@ using UnityEngine;
 public class PlayerState : ScriptableObject
 {
     public Vector3 _currentMovement = Vector3.zero;
+    public bool _isSlowed = false;
 }

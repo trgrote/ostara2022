@@ -30,6 +30,6 @@ public class PlayerInputHandler : MonoBehaviour
 
     void Update()
     {
-        _controller.SimpleMove(_state._currentMovement);
+        _controller.SimpleMove(_state._currentMovement / (_state._isSlowed ? 4 : 1));
     }
 }
