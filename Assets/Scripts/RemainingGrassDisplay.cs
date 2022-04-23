@@ -30,7 +30,7 @@ public class RemainingGrassDisplay : MonoBehaviour
     private void OnGrassChanged(RuntimeSet<GameObject> sender)
     {
         var count = sender.Count;
-        _text.text = count > 0 ? $"Eat {count} More Grass for Pan!" : "PAN IS PLEASED!";
+        _text.text = count > 0 ? $"Eat {count} More Blades of Grass for Pan!" : "PAN IS PLEASED!";
     }
 
     void OnDisable()
